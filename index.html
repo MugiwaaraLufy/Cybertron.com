@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>À propos de moi</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>À propos de moi</h1>
+		<img src="im.jpg" alt="#" style="width: 100px; height: 100px;">
+	</header>
+	<main>
+		<section>
+			<h2>Présentation</h2>
+			<p>Je m'appelle Cybertron, je suis un génie de l'informatique passionné(e) par le numérique.</p>
+			<img src="logo3.png" alt="Logo 3" width="100" height="100">
+		</section>
+		<section>
+			<h2>EXPÉRIENCES</h2>
+			<ul>
+				<li>Créateur de fichiers vpn <img src="logo4.png" alt="Logo 4" width="20" height="20"></li>
+				<li>Booster de likes ❤️🙂👍🏼 <img src="logo5.png" alt="Logo 5" width="20" height="20"></li>
+				<li>Expert en tutoriels ...... <img src="logo6.png" alt="Logo 6" width="20" height="20"></li>
+			</ul>
+		</section>
+		<section>
+			<img src="ima.jpeg" alt="#" style="width: 100px; height: 100px;">
+		</section>
+	</main>
+	<script>
+	    // Animation de fade-in pour le titre
+document.addEventListener("DOMContentLoaded", function () {
+  const titre = document.querySelector("h1");
+  titre.style.opacity = 0;
+  setTimeout(function () {
+    titre.style.opacity = 1;
+    titre.style.transition = "opacity 2s";
+  }, 500);
+});
+
+// Animation de slide-in pour les sections
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  sections.forEach(function (section) {
+    section.style.transform = "translateX(100%)";
+    setTimeout(function () {
+      section.style.transform = "translateX(0)";
+      section.style.transition = "transform 1s";
+    }, 1000);
+  });
+});
+
+// Animation de rotation pour les logos
+document.addEventListener("DOMContentLoaded", function () {
+  const logos = document.querySelectorAll("img");
+  logos.forEach(function (logo) {
+    logo.style.transform = "rotate(0deg)";
+    setInterval(function () {
+      logo.style.transform = "rotate(360deg)";
+      logo.style.transition = "transform 2s";
+    }, 3000);
+  });
+});
+	</script>
+	<footer>
+  <div class="infos">
+    <p>Nom : Cybertron</p>
+    <p> Profession : Génie de l'informatique</p>
+    <p>Adresse e-mail : <a href="qR. A S">votre@email.com</a></p>
+  </div>
+  <div class="logos">
+    <a href="https://www.facebook.com/cybertron.algo" target="_blank"><img src="logo-facebook.png" alt="Facebook"></a>
+    <a href="https://github.com/MugiwaaraLufy/Cybertron" target="_blank"><img src="logo-github.png" alt="GitHub"></a>
+  </div>
+</footer>
+</body>
+</html>
